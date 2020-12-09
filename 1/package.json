@@ -1,0 +1,11 @@
+{
+  "name": "simple-smart-contract",
+  "version": "1.0.0",
+  "description": "",
+  "main": "truffle-config.js",
+  "scripts": {
+    "start": "static-server frontend/public"
+  },
+  "author": "",
+  "license": "ISC"
+}

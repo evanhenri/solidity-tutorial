@@ -1,0 +1,23 @@
+version: '2'
+services:
+  ganache:
+    image: trufflesuite/ganache-cli:v6.12.1
+    command: [
+        "--mnemonic", "spare unhappy margin torch cancel guilt emotion notice speed maximum champion equal",
+        "--deterministic",
+    ]
+    hostname: ganache
+    ports:
+      - 8545:8545
+
+  app:
+    build: .
+    depends_on:
+      - ganache
+    environment:
+      SEED: "spare unhappy margin torch cancel guilt emotion notice speed maximum champion equal"
+    hostname: app
+    ports:
+    - 8080:3000
+    volumes:
+      - ./13:/app

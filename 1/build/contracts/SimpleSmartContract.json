@@ -1,0 +1,157 @@
+{
+  "contractName": "SimpleSmartContract",
+  "abi": [],
+  "metadata": "{\"compiler\":{\"version\":\"0.7.5+commit.eb77ed08\"},\"language\":\"Solidity\",\"output\":{\"abi\":[],\"devdoc\":{\"kind\":\"dev\",\"methods\":{},\"version\":1},\"userdoc\":{\"kind\":\"user\",\"methods\":{},\"version\":1}},\"settings\":{\"compilationTarget\":{\"/app/contracts/SimpleSmartContract.sol\":\"SimpleSmartContract\"},\"evmVersion\":\"istanbul\",\"libraries\":{},\"metadata\":{\"bytecodeHash\":\"ipfs\"},\"optimizer\":{\"enabled\":false,\"runs\":200},\"remappings\":[]},\"sources\":{\"/app/contracts/SimpleSmartContract.sol\":{\"keccak256\":\"0xcfd828fe3222ae4a5fc20cc7a29ad075608750d82fb032fe27c8608365577ee3\",\"license\":\"MIT\",\"urls\":[\"bzz-raw://fd6fed3f7a492ede462674cdf2c8e63ddb79e7a42726926d57c441cab596522d\",\"dweb:/ipfs/QmZSu7NxyaaNthv1W95qgCxhPtXnDxTADzxuSmbjGo6UPQ\"]}},\"version\":1}",
+  "bytecode": "0x6080604052348015600f57600080fd5b50603f80601d6000396000f3fe6080604052600080fdfea2646970667358221220317053e60b4a8021255c841071011793d96e64180610c0158b4879c42351bfef64736f6c63430007050033",
+  "deployedBytecode": "0x6080604052600080fdfea2646970667358221220317053e60b4a8021255c841071011793d96e64180610c0158b4879c42351bfef64736f6c63430007050033",
+  "immutableReferences": {},
+  "generatedSources": [],
+  "deployedGeneratedSources": [],
+  "sourceMap": "57:33:1:-:0;;;;;;;;;;;;;;;;;;;",
+  "deployedSourceMap": "57:33:1:-:0;;;;;",
+  "source": "// SPDX-License-Identifier: MIT\npragma solidity ^0.7.5;\n\ncontract SimpleSmartContract {\n\n}\n",
+  "sourcePath": "/app/contracts/SimpleSmartContract.sol",
+  "ast": {
+    "absolutePath": "/app/contracts/SimpleSmartContract.sol",
+    "exportedSymbols": {
+      "SimpleSmartContract": [
+        35
+      ]
+    },
+    "id": 36,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 35,
+        "linearizedBaseContracts": [
+          35
+        ],
+        "name": "SimpleSmartContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 36,
+        "src": "57:33:1"
+      }
+    ],
+    "src": "32:59:1"
+  },
+  "legacyAST": {
+    "absolutePath": "/app/contracts/SimpleSmartContract.sol",
+    "exportedSymbols": {
+      "SimpleSmartContract": [
+        35
+      ]
+    },
+    "id": 36,
+    "license": "MIT",
+    "nodeType": "SourceUnit",
+    "nodes": [
+      {
+        "id": 34,
+        "literals": [
+          "solidity",
+          "^",
+          "0.7",
+          ".5"
+        ],
+        "nodeType": "PragmaDirective",
+        "src": "32:23:1"
+      },
+      {
+        "abstract": false,
+        "baseContracts": [],
+        "contractDependencies": [],
+        "contractKind": "contract",
+        "fullyImplemented": true,
+        "id": 35,
+        "linearizedBaseContracts": [
+          35
+        ],
+        "name": "SimpleSmartContract",
+        "nodeType": "ContractDefinition",
+        "nodes": [],
+        "scope": 36,
+        "src": "57:33:1"
+      }
+    ],
+    "src": "32:59:1"
+  },
+  "compiler": {
+    "name": "solc",
+    "version": "0.7.5+commit.eb77ed08.Emscripten.clang"
+  },
+  "networks": {
+    "5777": {
+      "events": {},
+      "links": {},
+      "address": "0x85291d24925DaE7507591A2E27659b2E96Adf391",
+      "transactionHash": "0x7bf4ae17f80f5543b6a400be8047145c493e5999d81a300e7846af92ef1fa1e1"
+    },
+    "1606259746667": {
+      "events": {},
+      "links": {},
+      "address": "0x4cA1A07Addd16804dF385DBcFAdC8AEc84FdF88F",
+      "transactionHash": "0x0f3e0738f0264d5b234b3235a06b291329c36a69db3ecf0c670a4e31b0e63eb8"
+    },
+    "1606260017323": {
+      "events": {},
+      "links": {},
+      "address": "0xFB1dF8D026ddBBf5be5E242d653A583383Bf9F42",
+      "transactionHash": "0x8d8a7f15832fb7a0354cc0b568e41038479faa8f116a699c56e4c874e40cccaa"
+    },
+    "1606260048153": {
+      "events": {},
+      "links": {},
+      "address": "0xB9eC7020d9211f12ae18FaAB56745f8edEa5EE38",
+      "transactionHash": "0xb94281f525d21c6e6b77b21f73d9f5889cc4bb48dbaee9070ebaf2992bca075f"
+    },
+    "1606260624649": {
+      "events": {},
+      "links": {},
+      "address": "0x62480a4d82Ad67b9b87874Ea6d7224a5b858d057",
+      "transactionHash": "0xf921b10140b9571ea3a7aaa425630f5e951c7c73b9ffb3d13cfbad1b750e6b67"
+    },
+    "1606260710206": {
+      "events": {},
+      "links": {},
+      "address": "0x3E94C306c9f29260ed4BbEA35bCEa841c3D8f0A2",
+      "transactionHash": "0xd53029a8583d99bb69b8aaf4a1c1c355048a28ae1f36073b9515f544ae2e9684"
+    },
+    "1606262758450": {
+      "events": {},
+      "links": {},
+      "address": "0x3441cD1E5969ffB9d028515D9D664104ca246614",
+      "transactionHash": "0x3fd237ed08946d719c8ac817b967f0859c994ac0015062c20d0157c6fb3475b2"
+    }
+  },
+  "schemaVersion": "3.3.2",
+  "updatedAt": "2020-11-25T00:08:39.891Z",
+  "networkType": "ethereum",
+  "devdoc": {
+    "kind": "dev",
+    "methods": {},
+    "version": 1
+  },
+  "userdoc": {
+    "kind": "user",
+    "methods": {},
+    "version": 1
+  }
+}
