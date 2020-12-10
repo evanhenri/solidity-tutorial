@@ -19,5 +19,3 @@ services:
     hostname: app
     ports:
     - 8080:3000
-    volumes:
-      - ./13:/app

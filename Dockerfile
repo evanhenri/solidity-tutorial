@@ -23,5 +23,6 @@ RUN npm install -g \
     truffle
 
 COPY ./entrypoint.sh /
+COPY ./14 /app
 
 ENTRYPOINT ["/entrypoint.sh"]
