@@ -11,27 +11,27 @@ contract MultiSig {
     }
 
     // default value for bool is false
-    mapping(address => bool) approvers;
+    mapping(address => bool) public approvers;
 
     // the n requirement in 'n of m' signatures
     uint public n;
 
     // keeps track of the next id to use for Transfer objects
-    uint nextId;
+    uint public nextId;
 
     // tracks pending/approved multisig transfers
     mapping(uint => Transfer) public transfers;
 
     // tracks what addresses have approved what transactions
     // {<address>: {<transfer.id>: <address-approved-this-transfer>}}
-    mapping(address => mapping(uint => bool)) approvals;
+    mapping(address => mapping(uint => bool)) public approvals;
 
     modifier onlyApprover() {
         require(approvers[msg.sender], 'only approvers are allowed to approve transactions');
         _;
     }
 
-    constructor(address[] memory _approvers, uint _n) {
+    constructor(address[] memory _approvers, uint _n) payable {
         for(uint i = 0; i < _approvers.length; i++) {
             approvers[_approvers[i]] = true;
         }
@@ -58,5 +58,3 @@ contract MultiSig {
         }
     }
 }
-
-// left off at https://eattheblocks-pro.teachable.com/courses/588302/lectures/11394500
