@@ -8,20 +8,20 @@ pragma experimental ABIEncoderV2;
 contract Voting {
     mapping(address => bool) public voters;
     // for each voter, track if they have already voted for the given ballot id
-    mapping(address => mapping(uint => bool)) votes;
+    mapping(address => mapping(uint => bool)) public votes;
     mapping(uint => Ballot) public ballots;
     struct Choice {
         uint id;
         uint votes;
-        string name;
+        bytes32 name;
     }
     struct Ballot {
         uint id;
         uint end;
-        string name;
+        bytes32 name;
         Choice[] choices;
     }
-    uint nextBallotId;
+    uint public nextBallotId;
     address public admin;
 
     modifier onlyAdmin() {
@@ -40,11 +40,11 @@ contract Voting {
     }
 
     function createBallot(
-        string memory _name,
-        string[] memory _ballotChoices,
+        bytes32 _name,
+        bytes32[] calldata _ballotChoices,
         uint _offset
     )
-        public
+        external
         onlyAdmin()
     {
         // We can access empty Ballot instances that do not exist yet.
@@ -60,6 +60,10 @@ contract Voting {
             );
         }
         nextBallotId++;
+    }
+
+    function choices(uint _ballotId) view external returns (Choice[] memory) {
+        return ballots[_ballotId].choices;
     }
 
     function results(uint _ballotId) view external returns (Choice[] memory) {
