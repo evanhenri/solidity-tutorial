@@ -5,6 +5,7 @@ set -e
 echo "Installing truffle dependencies"
 npm install \
     @truffle/hdwallet-provider \
+    @openzeppelin/contracts \
     @openzeppelin/test-helpers
 echo "Finished installing truffle dependencies"
 
