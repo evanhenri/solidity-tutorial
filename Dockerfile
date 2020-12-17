@@ -10,7 +10,7 @@ RUN apt-get update \
         wget
 
 # Install solidity compiler
-RUN wget -O /usr/local/bin/solc https://github.com/ethereum/solidity/releases/download/v0.7.5/solc-static-linux \
+RUN wget -O /usr/local/bin/solc https://github.com/ethereum/solidity/releases/download/v0.8.0/solc-static-linux \
     && chmod +x /usr/local/bin/solc
 
 # Install nodejs + npm

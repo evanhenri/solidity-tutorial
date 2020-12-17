@@ -8,12 +8,6 @@ npm install \
     @truffle/hdwallet-provider
 echo "Finished installing truffle dependencies"
 
-echo "Installing contract dependencies"
-npm install \
-    @openzeppelin/contracts
-echo "Finished installing contract dependencies"
-
-
 echo "Migrating contracts"
 rm -rf /app/build
 truffle migrate --reset
