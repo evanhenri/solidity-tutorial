@@ -1,4 +1,4 @@
-FROM debian:buster-20201012
+FROM debian:buster-20201209
 
 WORKDIR /app
 
